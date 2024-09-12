@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 2px;
+        }
+        th {
+            background-color: #ddffcd;
+            color: #24415b;
+        }
+        .green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .yellow {
+            background-color: #FFEB3B;
+        }
+        .red {
+            background-color: #F44336;
+            color: white;
+        }
+        .report-link {
+            color: blue;
+            text-decoration: underline;
+        }
+       .title {
+            color: #F44336;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">NEMS L2 POD-BOOTSTRAPPING REPORT: Component Test Summary</h2>
+    <!-- Legend Table for NEMS Report -->
+    <table class="legend-table">
+        <tr>
+            <th>LEGEND</th>
+            <th class="green">Green</th>
+            <th class="yellow">Amber</th>
+            <th class="red">Red</th>
+        </tr>
+        <tr>
+            <td>Pass %</td>
+            <td>90%+</td>
+            <td>70-89%</td>
+            <td>Less than 70%</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>COMPONENT</th>
+            <th>TOTAL TESTS</th>
+            <th>PASSED</th>
+            <th>FAILED</th>
+            <th>PASS PERCENTAGE</th>
+            <th>Last 30 Days AVG PASS %</th>
+            <th>TEST REPORT</th>
+            <th>BRANCH_NAME</th>
+            <th>REPORT STATUS</th>
+        </tr>

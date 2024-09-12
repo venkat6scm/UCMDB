@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 2px;
+        }
+        th {
+            background-color: #ddffcd;
+            color: #24415b;
+        }
+        .green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .yellow {
+            background-color: #FFEB3B;
+        }
+        .red {
+            background-color: #F44336;
+            color: white;
+        }
+        .report-link {
+            color: blue;
+            text-decoration: underline;
+        }
+        .legend-table {
+            width: 50%;
+            margin-bottom: 2px;
+            border: 1px solid #000000;
+            text-align: center;
+        }
+        .pass-color {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .pass-green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pass-amber {
+            background-color: #FFEB3B;
+            color: black;
+        }
+        .pass-red {
+            background-color: #F44336;
+            color: white;
+        }
+        .title {
+            color: #F44336;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">NEMS L2 POD-bootstrapping</h2>
+    <table class="legend-table">
+        <tr>
+            <th class="pass-color">LEGEND</th>
+            <th class="pass-green">Green</th>
+            <th class="pass-amber">Amber</th>
+            <th class="pass-red">Red</th>
+        </tr>
+        <tr>
+            <td>Pass %</td>
+            <td>90%+</td>
+            <td>70-89%</td>
+            <td>Less than 70%</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>COMPONENT</th>
+            <th>TOTAL TESTS</th>
+            <th>PASSED</th>
+            <th>FAILED</th>
+            <th>PASS PERCENTAGE</th>
+           
+            <th>TEST REPORT</th>
+            <th>REPORT STATUS</th>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">NEMS_UPGRADE</a></td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td class="red">67</td>
+            
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">NEMS_UPGRADE</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">OS</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="green">100</td>
+            
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">OS_REPORT</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">K3S</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="green">100</td>
+            
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">K3S_REPORT</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">WORKLOAD</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="green">100</td>
+            
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">WORKLOAD_REPORT</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">INVENTORY</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td class="red">0</td>
+            
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">INVENTORY_REPORT</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+    </table>
+    <br>
+    <h2 class="title">A4 Level 2 CI CONSOLIDATED TESTS REPORT: Component Test Summary</h2>
+    <table>
+        <tr>
+            <th>COMPONENT</th>
+            <th>TOTAL TESTS</th>
+            <th>PASSED</th>
+            <th>FAILED</th>
+            <th>PASS PERCENTAGE</th>
+			<th>Last 30 Days AVG PASS %</th>
+            <th>TEST REPORT</th>
+            <th>REPORT STATUS</th>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_PAO/510">PAO</a></td>
+            <td>106</td>
+            <td>96</td>
+            <td>10</td>
+            <td class="green">91</td>
+			<td class="green">92</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_PAO/510/robot/report/report.html">PAO_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">NEMS</a></td>
+            <td>446</td>
+            <td>262</td>
+            <td>184</td>
+            <td class="red">59</td>
+			<td class="yellow">88</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ems-test-automation/-/jobs/190291912/artifacts/browse/dta4/">NEMS_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_VOLTHA/532">VOLTHA</a></td>
+            <td>89</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="red">0</td>
+			<td class="yellow">89</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_VOLTHA/532/robot/report/report.html">VOLTHA_Test_Report</a></td>
+            <td>2024-09-11 reports are not available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_NWM_POD/525">NWM_POD</a></td>
+            <td>217</td>
+            <td>139</td>
+            <td>78</td>
+            <td class="red">64</td>
+			<td class="yellow">88</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_NWM_POD/525/robot/report/report.html">NWM_POD_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/incub/fabric/testing/pipeline-blr1/-/pipelines/34047846">SE</a></td>
+            <td>107</td>
+            <td>99</td>
+            <td>8</td>
+            <td class="green">93</td>
+			<td class="yellow">80</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/incub/fabric/testing/pipeline-blr1/-/pipelines/34047846">SE_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ecp-core/-/jobs/190298155">ECP</a></td>
+            <td>32</td>
+            <td>32</td>
+            <td>0</td>
+            <td class="green">100</td>
+			<td class="green">95</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ecp-core/-/jobs/190298155">ECP_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/borabora/-/jobs/190311275">BORABORA</a></td>
+            <td>10</td>
+            <td>10</td>
+            <td>0</td>
+            <td class="green">100</td>
+			<td class="green">100</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/borabora/-/jobs/190311275">BORABORA_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/infra-tools/-/jobs/190311747">INFRA</a></td>
+            <td>48</td>
+            <td>48</td>
+            <td>0</td>
+            <td class="green">100</td>
+			<td class="green">99</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/infra-tools/-/jobs/190311747">INFRA_Test_Report</a></td>
+            <td>2024-09-11 reports are available</td>
+        </tr>
+    </table>
+</body>
+</html>

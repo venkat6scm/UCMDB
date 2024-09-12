@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 2px;
+        }
+        th {
+            background-color: #ddffcd;
+            color: #24415b;
+        }
+        .green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .yellow {
+            background-color: #FFEB3B;
+        }
+        .red {
+            background-color: #F44336;
+            color: white;
+        }
+        .report-link {
+            color: blue;
+            text-decoration: underline;
+        }
+       .title {
+            color: #F44336;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">A4 Level 2 CI CONSOLIDATED TESTS REPORT: Component Test Summary</h2>
+    <!-- Legend Table for A4 Report -->
+    <table class="legend-table">
+        <tr>
+            <th>LEGEND</th>
+            <th class="green">Green</th>
+            <th class="yellow">Amber</th>
+            <th class="red">Red</th>
+        </tr>
+        <tr>
+            <td>Pass %</td>
+            <td>90%+</td>
+            <td>70-89%</td>
+            <td>Less than 70%</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>COMPONENT</th>
+            <th>TOTAL TESTS</th>
+            <th>PASSED</th>
+            <th>FAILED</th>
+            <th>PASS PERCENTAGE</th>
+            <th>Last 30 Days AVG PASS %</th>
+            <th>TEST REPORT</th>
+            <th>BRANCH_NAME</th>
+            <th>REPORT STATUS</th>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_PAO/505">PAO</a></td>
+            <td>105</td>
+            <td>100</td>
+            <td>5</td>
+            <td class="green">95</td>
+            <td class="green">90</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_PAO/505/robot/report/report.html">PAO_Test_Report</a></td>
+            <td>2024-09-05 reports are available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_EMS/495">NEMS</a></td>
+            <td>446</td>
+            <td>395</td>
+            <td>51</td>
+            <td class="yellow">89</td>
+            <td class="yellow">87</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_EMS/495/robot/report/report.html">NEMS_Test_Report</a></td>
+            <td>2024-09-05 reports are available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_VOLTHA/526">VOLTHA</a></td>
+            <td>89</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="red">0</td>
+            <td class="green">93</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_VOLTHA/526/robot/report/report.html">VOLTHA_Test_Report</a></td>
+            <td>2024-09-05 reports are not available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_NWM_POD/519">NWM_POD</a></td>
+            <td>217</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="red">0</td>
+            <td class="yellow">88</td>
+            <td><a class="report-link" href="http://172.27.174.70:8080/job/DT_A4/job/BUILDS/job/L2/job/COMPONENT_BUILD/job/L2_CI_Reporting_NWM_POD/519/robot/report/report.html">NWM_POD_Test_Report</a></td>
+            <td>2024-09-05 reports are not available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/incub/fabric/testing/pipeline-blr1/-/pipelines/33847316">SE</a></td>
+            <td>107</td>
+            <td>92</td>
+            <td>15</td>
+            <td class="yellow">86</td>
+            <td class="yellow">78</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/incub/fabric/testing/pipeline-blr1/-/pipelines/33847316">SE_Test_Report</a></td>
+            <td>2024-09-05 reports are available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ecp-core/-/jobs/189259901">ECP</a></td>
+            <td>32</td>
+            <td>21</td>
+            <td>11</td>
+            <td class="red">66</td>
+            <td class="green">95</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/ecp-core/-/jobs/189259901">ECP_Test_Report</a></td>
+            <td>2024-09-05 reports are available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/borabora/-/jobs/189272029">BORABORA</a></td>
+            <td>10</td>
+            <td>10</td>
+            <td>0</td>
+            <td class="green">100</td>
+            <td class="green">100</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/borabora/-/jobs/189272029">BORABORA_Test_Report</a></td>
+            <td>2024-09-05 reports are available</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/infra-tools/-/jobs/189272383">INFRA</a></td>
+            <td>48</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="red">0</td>
+            <td class="green">98</td>
+            <td><a class="report-link" href="https://gitlab.devops.telekom.de/Access40/dev/c3/infra-tools/-/jobs/189272383">INFRA_Test_Report</a></td>
+            <td>2024-09-05 reports are not available</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
